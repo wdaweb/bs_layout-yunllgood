@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021職訓作業 BS_Layout</title>
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', 'Micrsoft JhenHei', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(#2b2b2b, #3b3b3b 20%, #3b3b3b 80%, #2b2b2b);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-white p-2">
+    <div class="row">
+      <div class="col-sm-12 col-lg-1 text-center">
+        <h1>LOGO</h1>
+      </div>
+      <!-- ml-auto 自動分配左邊之間的距離 -->
+      <h5 class="col col-lg-1 text-center ml-auto">Home</h5>
+      <h5 class="col col-lg-1 text-center">Features</h5>
+      <h5 class="col col-lg-1 text-center">Works</h5>
+      <h5 class="col col-lg-1 text-center">Contact</h5>
+    </div>
+    <div class="row d-flex justify-content-center align-content-center">
+      <div class="col mt-5 text-center">
+        <img src="https://picsum.photos/200/200/?random=1" style="border-radius: 50%;">
+        <h1 class="mt-3">Bootstrap Layout</h1>
+        <h5 class="col-10 text-left m-auto p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime veritatis, facilis reiciendis enim vitae
+          at omnis, itaque quisquam dignissimos quaerat rem voluptates quia consequuntur culpa molestiae eaque explicabo
+          quam.</h5>
+        <button type="button" class="btn btn-light">Learn More</button>
+      </div>
+    </div>
+    <!-- fixed-bottom 固定在底部 -->
+    <div class="text-center fixed-bottom">
+      <p class="">Design by yunllgood</p>
+    </div>
+  </div>
+
+
+  <!-- 順序要對，要先有 jQuery，再有 popper.js、bootstrap.js  -->
+  <!-- 3. src jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 2. src  bootstrap.bundle.min.js 包含 bootstrap.js、popper.js-->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
